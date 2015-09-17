@@ -1,6 +1,4 @@
-<?php if (!defined('GUEST')) die('go away'); ?>
-
-<?php
+<?php if (!defined('GUEST')) die('go away');
 
 function krand($length) {
     $alphabet = "abcdefghkmnpqrstuvwxyzABCDEFGHKMNPQRSTUVWXYZ23456789";
@@ -462,4 +460,3 @@ function character_refresh() {
 
     return true;
 }
-?>

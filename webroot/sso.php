@@ -4,9 +4,5 @@
     include_once('helper.php');
 
     sstart();
-?>
-
-<?php
     sso_update();
     header('Location: ' . $cfg_url_base);
-?>

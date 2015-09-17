@@ -14,4 +14,3 @@
 	echo "done. sleeping.\n";
 	sleep(600);
     }
-?>
