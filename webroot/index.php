@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="
-	<?php echo $cfg_mumble_title; ?>
+    <?php echo $cfg_mumble_title; ?>
     ">
     <meta name="author" content="kiu Nakamura">
     <meta name="mobile-web-app-capable" content="yes">
@@ -29,11 +29,11 @@
 
 <?php
     if (isset($_SESSION['error_code']) && $_SESSION['error_code'] != 0) {
-	include('inc_error.php');
+        include('inc_error.php');
     } else if (isset($_SESSION['updated_at']) && $_SESSION['updated_at'] > (time() - 3600)) {
-	include('inc_success.php');
+        include('inc_success.php');
     } else {
-	include('inc_start.php');
+        include('inc_start.php');
     }
 ?>
 
