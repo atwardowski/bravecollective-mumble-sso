@@ -1,3 +1,5 @@
+<?php
+ini_set('date.timezone', 'UTC');
 $cfg_url_base = "http://example.org/";
 $cfg_url_callback = $cfg_url_base."ccp_callback.php";
 
