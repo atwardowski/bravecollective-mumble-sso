@@ -1,9 +1,7 @@
-<?php if (!defined('GUEST')) die('go away'); ?>
-
 <div class="container">
     <div class="jumbotron">
 	<a href="https://wiki.braveineve.com" target="_blank"><img src="img/brave.png" class="pull-right"></a>
-	<h1><?php echo $cfg_mumble_title;?></h1>
+	<h1><?php echo $cfg_title;?></h1>
 	<br>
 	<p>
 	    Click the button below to login through <i>EVE Online SSO</i> in order to register your in-game name on the comms server.
@@ -12,7 +10,7 @@
 
 <?php
     $url = 'https://login.eveonline.com/oauth/authorize/?response_type=code';
-    $url = $url . '&redirect_uri=' . $cfg_url_base . "sso.php";
+    $url = $url . '&redirect_uri=' . $cfg_url_callback;
     $url = $url . '&client_id=' . $cfg_ccp_client_id;
     $url = $url . '&scope=';
     $url = $url . '&state=' . $_SESSION['nonce'];

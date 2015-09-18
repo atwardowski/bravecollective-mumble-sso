@@ -1,8 +1,4 @@
 <?php
-    define('GUEST', 23);
-    include_once('config.php');
-    include_once('helper.php');
-
-    sstart();
-    sdestroy();
-    header('Location: ' . $cfg_url_base);
+require_once(__DIR__.'/../include/init.php');
+sdestroy();
+header('Location: ' . $cfg_url_base);
